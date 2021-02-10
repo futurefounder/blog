@@ -532,11 +532,11 @@ img {
 button#myid.buttonsendfox {
   background-color: white; 
   color: white; 
-  border: 2px solid #4CAF50;
+  border: 0px solid #000000;
 }
 
 input#myid2.buttonsendfox2 {
   background-color: white; 
   color: white; 
-  border: 2px solid #4CAF50;
+  border: 2px solid #000000;
 }
