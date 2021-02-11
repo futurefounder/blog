@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 👨‍🔬 Future Founder </title>
-    <link>futurefounder.github.io/categories/</link>
+    <link>blog.futurefounder.me/categories/</link>
     <description>Recent content in Categories on 👨‍🔬 Future Founder </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="futurefounder.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="blog.futurefounder.me/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
