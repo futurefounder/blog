@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>⌛ I Will Try to Launch My Next Micro Startup Within in 3 Days - Here Is Why - 👨‍🔬 Future Founder </title>
+    
+    <meta name="description" content="Estimated Reading Time: 2 Mins
+Alright, folks, we are right back at the start again.
+This time for round #3 of the Micro Startup Journey.
+I&rsquo;ve launched my first 2 Micro Startups in January and February and have taken the first days of March to reflect on what I have learned so far.
+Time to launch
+One main thing that struck me is - I launched both on nearly the same day of the month.">
+    <meta name="author" content="">
+    
+    <link href="/an-old-hope.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/custom.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="generator" content="Hugo 0.80.0" />
+    
+    
+    
+    <script>
+      function setTheme() {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.body.classList.add('dark');
+          return;
+        }
+
+        const time = new Date();
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
+
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then((res) => res.json())
+            .then((data) => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/0586d2fdb1.js" crossorigin="anonymous"></script>
+    <script async defer data-domain="blog.futurefounder.me" src="https://plausible.io/js/plausible.js"></script>
+
+  </head>
+  
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">  
+        <p class="logo"><a href="/">👨‍🔬 Future Founder </a> </p>
+       
+       
+       <p class="about"><a href="/about/whoisthefuturefounder/">About</a></p>
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">⌛ I Will Try to Launch My Next Micro Startup Within in 3 Days - Here Is Why</h1>
+    <div class="post-meta">March 3, 2021
+    <footer class="post-footer">
+      <ul class="post-tags">
+        <li><a href="/tags/startups">startups</a></li>
+        <li><a href="/tags/indiehacking">indiehacking</a></li>
+        <li><a href="/tags/journey">journey</a></li>
+        <li><a href="/tags/microstartup">microstartup</a></li>
+      </ul>
+    </footer>
+    </div>
+   
+  </header>
+  <div class="post-content"><p>Estimated Reading Time: 2 Mins</p>
+<p>Alright, folks, we are right back at the start again.</p>
+<p>This time for round #3 of the Micro Startup Journey.</p>
+<p>I&rsquo;ve launched my first 2 Micro Startups in <a href="https://blog.futurefounder.me/one-micro-startup-per-month-1/">January</a> and <a href="https://blog.futurefounder.me/february-micro-startup/">February</a> and have taken the first days of March to reflect on what I have learned so far.</p>
+<p><strong>Time to launch</strong></p>
+<p>One main thing that struck me is - I launched both on nearly the same day of the month.</p>
+<p>Close to the end.</p>
+<p>At first, I thought &ldquo;<em>Fuck, it took me far too long to launch in February again</em>&rdquo;, but then I noticed a difference between the two.</p>
+<p>With ViTAL I had been practically working on the project in November of 2020 when I started <a href="https://blog.ycombinator.com/startup-school-for-future-founders/">YC&rsquo;s Future Founder Program</a>.</p>
+<p>So when I launched end of January it had been about 3 months.</p>
+<p>With Vegan Book Base I went from idea to launch in about 3 weeks.</p>
+<p>Frankly, I was delighted when I realized that I managed to improve my time to launch.</p>
+<p><img src="https://i.ibb.co/fkpyykP/ship-early-paul-graham.png" alt="https://i.ibb.co/fkpyykP/ship-early-paul-graham.png"></p>
+<p>Just as they <a href="https://www.ycombinator.com/library/40-the-art-of-shipping-early-and-often">teach you at YC to ship early and well before you think you are ready</a>.</p>
+<p><strong>What I expect from an early launch</strong></p>
+<p>I&rsquo;ve noticed that it takes a lot of time to market and grow a Micro Startup.</p>
+<p>This means just as development the feedback from users and adjustment of the product is also very important.</p>
+<p>In this month I am hoping to have more time to adjust and react by having something out in the wild very early.</p>
+<p>In the last months I also talked to potential users, had gotten feedback, and used that for my first product ideas.</p>
+<p>But having something online quickly will actually speed up the whole process and in addition to the people I talk to I will have feedback from people over the world wide web which will increase the number of people telling me what&rsquo;s OK and what not.</p>
+<p><strong>Concluding Thoughts</strong></p>
+<p>The first Micro Startups have taught me a lot about <a href="http://momtestbook.com/">how to talk to potential clients</a> and how to actually ship things.</p>
+<p>I want to try and be on the Startup field much faster this month and hope this increases my odds of getting valuable feedback I can then use to improve my Micro Startup with small but valuable steps.</p>
+
+
+<a href="https://twitter.com/futurefounder21" >
+  <i class="fab fa-twitter"></i> Get real-time updates on twitter</a><br>
+			
+
+</div>
+  
+</article></main>
+<footer class="footer">
+  <span>&copy; 2021 <a href="/">👨‍🔬 Future Founder </a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+
