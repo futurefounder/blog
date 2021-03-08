@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>🐤Day #1 My Minimalist Startup Approach - 👨‍🔬 Future Founder </title>
+    
+    <meta name="description" content="Estimated reading time: 2 Mins
+So today I will be diving into my problems, my audience and product ideas.
+I am noticing I need guidance and a framework again. Like in time constraints and rules I will work by.
+So I guess I will try to set my time today to 4 hours focused work on my startup.
+Why &ldquo;only&rdquo; 4 hours ?
+Because I read in Cal Newport&rsquo;s Book &ldquo;Deep Work&rdquo; 4 hours being the optimal time you can work with full concentration on something.">
+    <meta name="author" content="">
+    
+    <link href="/an-old-hope.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/custom.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="generator" content="Hugo 0.80.0" />
+    
+    
+    
+    <script>
+      function setTheme() {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.body.classList.add('dark');
+          return;
+        }
+
+        const time = new Date();
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
+
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then((res) => res.json())
+            .then((data) => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/0586d2fdb1.js" crossorigin="anonymous"></script>
+    <script async defer data-domain="blog.futurefounder.me" src="https://plausible.io/js/plausible.js"></script>
+
+  </head>
+  
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">  
+        <p class="logo"><a href="/">👨‍🔬 Future Founder </a> </p>
+       
+       
+       <p class="about"><a href="/about/whoisthefuturefounder/">About</a></p>
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">🐤Day #1 My Minimalist Startup Approach</h1>
+    <div class="post-meta">March 8, 2021
+    <footer class="post-footer">
+      <ul class="post-tags">
+        <li><a href="/tags/startups">startups</a></li>
+        <li><a href="/tags/indiehacking">indiehacking</a></li>
+        <li><a href="/tags/journey">journey</a></li>
+        <li><a href="/tags/microstartup">microstartup</a></li>
+      </ul>
+    </footer>
+    </div>
+   
+  </header>
+  <div class="post-content"><p>Estimated reading time: 2 Mins</p>
+<p>So today I will be diving into my problems, my audience and product ideas.</p>
+<p>I am noticing I need guidance and a framework again. Like in time constraints and rules I will work by.</p>
+<p>So I guess I will try to set my time today to 4 hours focused work on my startup.</p>
+<p><strong>Why &ldquo;only&rdquo; 4 hours ?</strong></p>
+<p>Because I read in <a href="https://www.calnewport.com/blog/2012/08/31/henri-poincares-four-hour-work-day/">Cal Newport&rsquo;s Book &ldquo;Deep Work&rdquo; 4 hours</a> being the optimal time you can work with full concentration on something.</p>
+<p>The other time I can roam and work on other things, but this 4 hours must be crucial focused work on the problems I am trying to solve.</p>
+<p><strong>Problem Exploration</strong></p>
+<p>I will start with myself what are the current problems I am having?</p>
+<p>Here is a selection of what I came up with</p>
+<ul>
+<li>The downsides of being in a cold city</li>
+<li>I am looking forward to traveling again</li>
+<li>I regulary miss out on Yoga classes. I lack the regular practice, although there are so many offers and opportunities</li>
+</ul>
+<p><strong>5-Why-Process</strong></p>
+<p>In order to get to the core of a problem, you can use the <a href="https://buffer.com/resources/5-whys-process/">5-Why process</a>.</p>
+<p>Let me do it on this one</p>
+<p><strong>Why am I not doing Yoga regularly?</strong></p>
+<p>Because I do not know which Yoga Class to take.</p>
+<p><strong>Why don&rsquo;t I know which Yoga Class to take ?</strong></p>
+<p>Because there are somany options and Yoga styles and I can&rsquo;t decide.</p>
+<p><strong>Why can&rsquo;t I decide which option to take?</strong></p>
+<p>Because I do not want to do something wrong.</p>
+<p><strong>Why don&rsquo;t I want to do something wrong?</strong></p>
+<p>Because I think there is a &ldquo;right class&rdquo; or a &ldquo;right practice&rdquo;.</p>
+<p><strong>Why do I think there is a right class?</strong></p>
+<p>Because I want to avoid mistakes.</p>
+<p>I guess it comes back to comfort zones and breaking habits.</p>
+<p>I will try and move forward in the direction of building habits.
+But, I want something where the entry to doing it is lower for me.</p>
+<p>I have started writing on daily basis over the last weeks and have noticed that it significantly helps me structure my mind and get things going.</p>
+<p>James Clear <a href="https://jamesclear.com/atomic-habits">talks about starting with really small steps</a> in the beginning of creating a new habit.</p>
+<p>It is more important to actually do something that moves you in the direction of your new habit than planning to big goals and not achieving anything.</p>
+<p><a href="https://i.ibb.co/YcYh3yN/james-clear-quote.png"></a></p>
+<p>I have been using templates, but lacked a simple place I can just open and get things going without any distraction.</p>
+<p>Yo this will be my starting point.</p>
+<p>Help with building a writing habit.</p>
+
+
+<a href="https://twitter.com/futurefounder21" >
+  <i class="fab fa-twitter"></i> Get real-time updates on twitter</a><br>
+			
+
+</div>
+  
+</article></main>
+<footer class="footer">
+  <span>&copy; 2021 <a href="/">👨‍🔬 Future Founder </a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+
