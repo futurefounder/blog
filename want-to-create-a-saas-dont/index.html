@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>🙅‍♂️Want to Create a SaaS? Don&#39;t - 👨‍🔬 Future Founder </title>
+    
+    <meta name="description" content="Since I&rsquo;ve joined the IH community about 9 months ago, I&rsquo;ve noticed that a lot of attention is put heavily on the tech part of creating a SaaS.
+I&rsquo;ve come to the conclusion that it&rsquo;s time to adjust the perspecive.
+Here is why
+Numerous lists of tools that teach you how to build a SaaS without code, with low code, or get it quickly deployed with seamless backend solutions are paving the path.">
+    <meta name="author" content="">
+    
+    <link href="/an-old-hope.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/custom.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="generator" content="Hugo 0.80.0" />
+    
+    
+    
+    <script>
+      function setTheme() {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.body.classList.add('dark');
+          return;
+        }
+
+        const time = new Date();
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
+
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then((res) => res.json())
+            .then((data) => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/0586d2fdb1.js" crossorigin="anonymous"></script>
+    <script async defer data-domain="blog.futurefounder.me" src="https://plausible.io/js/plausible.js"></script>
+
+  </head>
+  
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">  
+        <p class="logo"><a href="/">👨‍🔬 Future Founder </a> </p>
+       
+       
+       <p class="about"><a href="/about/whoisthefuturefounder/">About</a></p>
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">🙅‍♂️Want to Create a SaaS? Don&#39;t</h1>
+    <div class="post-meta">April 2, 2021
+    <footer class="post-footer">
+      <ul class="post-tags">
+        <li><a href="/tags/startups">startups</a></li>
+        <li><a href="/tags/indiehacking">indiehacking</a></li>
+        <li><a href="/tags/journey">journey</a></li>
+      </ul>
+    </footer>
+    </div>
+   
+  </header>
+  <div class="post-content"><p>Since I&rsquo;ve joined the IH community about 9 months ago, I&rsquo;ve noticed that a lot of attention is put heavily on the tech part of creating a SaaS.</p>
+<p>I&rsquo;ve come to the conclusion that it&rsquo;s time to adjust the perspecive.</p>
+<p><strong>Here is why</strong></p>
+<p>Numerous lists of tools that teach you how to build a SaaS without code, with low code, or get it quickly deployed with seamless backend solutions are paving the path.</p>
+<p>I have gone down this road myself and have tried to created products <a href="https://blog.futurefounder.me/one-micro-startup-per-month-1/">which were supposed to be the fruitful beginning of a potential SaaS</a>.</p>
+<p>Then, I noticed I was doing it all wrong.</p>
+<p>As funny as it sounds, but the best way to create a SaaS seems to be <strong>not to create a SaaS</strong>.</p>
+<p>Or, as <a href="https://www.kalzumeus.com/">Patrick McKenzie</a> puts it</p>
+<p>&ldquo;<a href="https://www.youtube.com/watch?v=_h8IhbR2Iqk&amp;t=410s">if you can possibly avoid it don' start in SaaS</a>&rdquo;</p>
+<p><strong>What are the implications?</strong></p>
+<p>Well, in short:</p>
+<p><img src="https://i.ibb.co/z2vhV0t/No-Saa-S-browser.png" alt="https://i.ibb.co/z2vhV0t/No-Saa-S-browser.png"></p>
+<p>Rather than leaping directly into the technological part of a business, the first priority should be to create a service/consulting that actually <strong>has a repeatable positive output</strong> that is visible to the client.</p>
+<p>This is not only the best way to get a deep understanding of your client&rsquo;s needs but also sharpens your business senses.</p>
+<p>From this point on of having a service clients actually need, pay for and are happy with you can continue to start thinking about how to take over parts of the clients pains by automating processes the clients are already paying for.</p>
+<p><strong>Real life example</strong></p>
+<p>A picture book version of how this leads to success has been done by <a href="https://twitter.com/andrewpierno">@Andrewpierno</a>  who is a software developer <a href="https://www.indiehackers.com/post/0-10k-mrr-in-3-5-months-a-step-by-step-guide-on-exactly-what-i-did-1f3ce44511">who cracked 10k$ in only 3.5 months</a> but doing exactly this:</p>
+<p>Service first approach, ditching code.</p>
+<p>As I am currently on the path of learning to code this realization has both: a relieving and frustrating effect on me.</p>
+<p>On the one hand I think: <em>Oh my gawd! Why am I bothering about code then anyway??!!!!11</em></p>
+<p>On the other hand I think: <em>OK, great: So I don&rsquo;t have to worry about coding too much after all.</em></p>
+<p><strong>Concluding thoughts</strong></p>
+<p>I have seen many success stories in the Indie Hacker scene are being technology-focused.</p>
+<p>This is not bad, but creates a false assumption namely: focus on code.</p>
+<p>The opposite of the first assumptions seems to be the way to go: focus on service</p>
+<p>Yes, code and tech is important, but get the business straight first and then start to code.</p>
+<p>Obviously, there will be examples where this methodology will not apply.</p>
+<p>But I think especially if you are starting out on your journey of figuring out how to build a profitable business is highly valuable to focus on the right things.</p>
+<p>I am still on the road of creating my path if you are interested</p>
+<p>
+
+<a href="https://twitter.com/futurefounder21" >
+  <i class="fab fa-twitter"></i> in more real-life updates feel free to join me on twitter.</a><br>
+			
+
+<br>
+Have a good one</p>
+</div>
+  
+</article></main>
+<footer class="footer">
+  <span>&copy; 2021 <a href="/">👨‍🔬 Future Founder </a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+
